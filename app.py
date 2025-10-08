@@ -1,24 +1,22 @@
 import streamlit as st
 from datetime import datetime
-# Assuming these services and DAOs exist and work as intended
-# If these files are missing, the application will fail here with an ImportError or NameError.
+
 from src.services.vehicle_service import VehicleService
 from src.services.accident_service import AccidentService
 from src.services.congestion_service import CongestionService
 from src.services.zone_service import ZoneService
 
-# Initialize Services
+
 vehicle_service = VehicleService()
 accident_service = AccidentService()
 congestion_service = CongestionService()
 zone_service = ZoneService()
 
-# --- Initialize Session State for Page Management ---
-# 'page' can be 'dashboard' or 'main_app'
+
 if 'page' not in st.session_state:
     st.session_state.page = 'dashboard'
 
-# --- Streamlit UI Configuration ---
+
 st.set_page_config(page_title="City Traffic Monitoring System", layout="wide")
 
 
