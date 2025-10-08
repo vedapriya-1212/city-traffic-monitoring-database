@@ -1,6 +1,6 @@
 streamlit
 supabase
-dotenv
+python-dotenv
 # Add any other libraries you use in your DAOs or services
 # For example, if you use pandas for data manipulation:
 #pandas
