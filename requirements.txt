@@ -1,0 +1,8 @@
+streamlit
+supabase
+# Add any other libraries you use in your DAOs or services
+# For example, if you use pandas for data manipulation:
+#pandas
+#
+# If you are connecting to a relational database (e.g., PostgreSQL) outside of Supabase:
+# psycopg2-binary
